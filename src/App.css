@@ -1,0 +1,240 @@
+
+body{
+    background-clip: #eee;
+    width:100%;
+    height:100vh;
+    font-family: sans-serif;
+    
+  }
+
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://img.freepik.com/fotos-premium/mujer-hermosa-joven-playa-tropical-puesta-sol_109800-9755.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#alto{
+    display:flex;
+   align-items: center;
+   border-bottom: 1px solid rgba(#191919, .2);
+   padding: 10px 50px;
+   justify-content: space-between;
+   color: #31a9cc;
+   font-size: 18px;
+   padding-top: 30px;
+  }
+
+  #my_shop{
+    position: absolute;
+    left: 50%;
+  }
+  .bcard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 65px;
+    gap: 15px;
+    justify-content: center;
+  }
+  .flex-container{
+  
+    padding: 0px;
+    padding-top: 6%;
+  
+  }
+  .card{
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+    border: none;
+    margin: 20px;
+  }
+  .card:hover{
+    background-color: #31a9cc;
+    box-shadow: 13px 18px 42px -20px rgba(#191919, .75);
+    color: #fff;
+    bottom: -20px;
+  }
+  .card-img{
+    position: relative;
+    width: 100%;
+    top: -20px;
+    transition: all .3s ease-in-out;
+    }
+  .card-img:hover{
+    top:-40px;
+    transform: scale (1.2);
+  }
+  .ji{
+    border-radius: 15px;
+  }
+  
+  .card-body{
+    padding: 0 25px;
+  }
+  .titulo{
+    font-family: cursive;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .descripcion{
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .price-section{
+    display: flex;
+    justify-content: space-between;
+  }
+  .tamano{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+  }
+  span{
+    margin-left: 10px;
+  }
+  
+  .price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+  }
+  .peso{
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .cta-group{
+    display: flex;
+    justify-content: center;
+  }
+  .carro{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ffad01;
+    border-radius: 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffad01;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+  }
+  .carro:hover{
+      color: #fff;
+      background-color: #ffad01;
+      box-shadow: 11px 10px 12px -5px rgba(#191919, .52);
+  }
+/* titulo */
+.medio{
+    text-align: center;
+    padding-top: 30px;
+    color: #ffc08c;
+}
+/* productos */
+.bcard{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    text-align: center; 
+}
+
+
+
+
+/* detalle */
+.sectionp1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+/* .prodetails{
+    display: flex;
+    margin-top: 10%;
+}
+.single-pro-image{
+    width: 30%;
+    margin-right: 10%;
+    padding-left: 30px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 40%;
+    cursor: pointer;
+}
+.single-pro-details{ 
+    width: 60%;
+    padding-top: 30px;
+}
+.alto{
+    padding: 40px 0 20px 0;
+} 
+.bajo{
+    font-size: 26px;
+} */
+.elegir{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+} 
+/* .roto{
+    width: 10%;
+    height: 17px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+} 
+.roto :focus{
+    outline: none;
+} */
+
+/* .des{
+    line-height: 25px;
+} */
+
+/* contador */
+.count,
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numero{
+    padding: 20px;    
+}
+
+.compra{
+    background-color: #ffc08c ;
+    color: #000000;
+} 
+
+/* footer */
+.rp{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+.col{
+    padding-left: 30px;
+}
