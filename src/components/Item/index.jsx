@@ -17,7 +17,7 @@ export default function Item({info}) {
         <div className="card"> 
           <div className="card-img">
           <Link to={`/detalle/${info.id}`} >
-            <img src={info.img} alt="" width={365} height={400} className="ji"/>
+            <img src={info.img} alt="" width={265} height={300} className="ji"/>
             </Link>
           </div>
           <div className="card-body">
@@ -37,7 +37,7 @@ export default function Item({info}) {
             </div>
           </div>
           <div className="cta-group">
-          <button className="carro">Agregar al carrito</button>
+          <button className="carro" >Agregar al carrito</button>
           </div>
         </div>
       </div>

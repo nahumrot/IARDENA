@@ -7,13 +7,14 @@ import Footer from './components/footer'
 import Contacto from './components/Contacto';
 import Politica from './components/Politica';
 import { BrowserRouter, Route , Routes } from 'react-router-dom'
-// import CartContext from './context/CartContext';
+// import { CartContext } from './context/Context';
+import CartProvider from './context/Context';
 
 function App() {
   return (
     <>
     <BrowserRouter>
-      {/* <CartContext> */}
+      <CartProvider>
         <NavBar/>
         <Routes>
           <Route path='/' element = { <ItemListContainer/>} />
@@ -25,10 +26,11 @@ function App() {
 
         </Routes>
         <Footer/>
-      {/* </CartContext> */}
+      </CartProvider>
     </BrowserRouter>
     </>
   );
 }
 
 export default App;
+

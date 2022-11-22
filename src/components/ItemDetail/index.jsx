@@ -1,18 +1,21 @@
 import React from 'react'
 import ItemCount from '../ItemCount'
+import { useCartContext } from '../../context/Context'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ItemDetail({data}) {
   const [goToCart,setGoToCart] = useState(false)
+  const {addProduct} = useCartContext()
 
   const onAdd = (quantity) => {
     setGoToCart(true)
+    addProduct(data,quantity)
 }
 
   return (
 <div className="sectionp1">
-        < div className='container container-fluid'>
+        < div class='container container-fluid'className="fotos">
                 <div id="carouselExampleIndicators" class="carousel slide col-lg-9 mt-5 " data-bs-ride="true">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,7 +80,7 @@ export default function ItemDetail({data}) {
                 <hr/>
 
                 <h4 className="mt-2">Descripcion:</h4>
-                <p>Binge on movies and TV episodes, news, sports, music and more! We insisted on 720p High Definition for this 32" LED TV, bringing out more lifelike color, texture and detail. We also partnered with Roku to bring you the best possible content with thousands of channels to choose from, conveniently presented through your own custom home screen.</p>
+                <p className='gru'>Binge on movies and TV episodes, news, sports, music and more! We insisted on 720p High Definition for this 32" LED TV, bringing out more lifelike color, texture and detail. We also partnered with Roku to bring you the best possible content with thousands of channels to choose from, conveniently presented through your own custom home screen.</p>
                 <hr/>
                 <p>Sold by: <strong> VW</strong></p>
 				

@@ -1,21 +1,25 @@
 import {NavLink} from 'react-router-dom'
 import React from 'react'
-// import imagen from '../../../imagen/logo'
+import Imagen from '../../asset/imagen/logo.png'
+import { useContext } from 'react'
+// import { CartContext } from '../../context/Context'
+
+
 
 export default function NavBar() {
- 
+  // const {totalProducts} = useContext(CartContext)
   return (
     <nav class="navbar bg-light fixed-top" id="alto">
     <div class="container-fluid">
       <NavLink class="navbar-brand" id="my_shop"  to='/'>
-         I A R D E N A 
-         {/* <img src={imagen} alt="" srcset="" /> */}
+         {/* I A R D E N A  */}
+         <img src={Imagen} alt="" srcset="" className='logo'/>
          </NavLink>
       <div className="cart">
-             <span>
+             <NavLink to="/cart">
                <i className="bi bi-cart3"></i>
-             </span>
-             <span>{0}</span>
+             </NavLink>
+             {/* <span>{totalProducts}</span> */}
           </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -28,22 +32,22 @@ export default function NavBar() {
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <NavLink class="nav-link active" aria-current="page" to='/'>Inicio</NavLink>
+              <NavLink class="nav-link active" aria-current="page" to='/' className="lo">Inicio</NavLink>
             </li>
             <li class="nav-item">
-              <NavLink to="/contacto" class="nav-link">Contacto</NavLink>
+              <NavLink to="/contacto" class="nav-link" className="lo" >Contacto</NavLink>
             </li>
             <li class="nav-item">
-              <NavLink to="/politica" class="nav-link">Politica De Devolcion</NavLink>
+              <NavLink to="/politica" class="nav-link" className="lo" >Politica De Devolcion</NavLink>
             </li>
             <li class="nav-item dropdown">
-              <NavLink class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Vestidos
+              <NavLink class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              <i class="bi bi-caret-down-fill"  >Vestidos</i>
               </NavLink>
               <ul class="dropdown-menu">
-                <NavLink to='/categoria/vestidoslisos'  class="dropdown-item" > Lisos </NavLink>
+                <NavLink to='/categoria/vestidos liso'  class="dropdown-item" className="lo" > Lisos </NavLink>
                 <hr/>
-                <NavLink to='/categoria/vestidoscombinados'  class="dropdown-item"> Diseno </NavLink>
+                <NavLink to='/categoria/vestidos combinado'  class="dropdown-item" className="lo"> Combinados </NavLink>
               </ul>
             </li>
           </ul>

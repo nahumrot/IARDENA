@@ -225,11 +225,12 @@ export default function ItemListContainer({texo}) {
 
   return (
     <>
+    
      <div className='header'>
         <div className='row'>
         </div>
       </div>
-    <Title/>
+      {categoriaId ? <h2 className='medio'> {categoriaId} </h2> :  <Title/>}
     <ItemList data={data}/>
     </>
   )
